@@ -13,4 +13,12 @@ int main()
         //pesan array integer 3 elemen
         cout<<data.at(5)<< endl;
     }
+    catch (exception& e) {
+        //Penangkap menggunakan obyek excetion
+        cout << e.what() << endl;
+        /* akan dieksekusi karna array data hanya memiliki 3 elemen*/
+    }
+    cout << "Baris Program yang terakhhir" << endl;
+    /* Penanda 2: bahwa program berjalan tanpa berhenti meskipun terjadi kesalahan*/
+    return 0;
 }
