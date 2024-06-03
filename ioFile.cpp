@@ -11,7 +11,7 @@ int main() {
     // menunjuk ke sebuah nama file
     outfile.open("contojfile.txt");
 
-    cout << ">= Menulis file, \'q\ untuk keluar" << endl;
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
     //unlimited loop untuk menulis
     while (true) {
@@ -21,5 +21,6 @@ int main() {
         //loop akan berhenti jika ada memasukan karakter q
         if (baris == "q") break;
         // menulis dan memasukan nilai dari 'baris' kedalam file
+        outfile << baris << endl;
     }
 }
